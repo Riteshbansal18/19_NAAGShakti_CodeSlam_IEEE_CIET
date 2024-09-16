@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Endless Ride</title>
+    <title>Endless Ride - Worldwide Motorcycle Tours</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         header {
             background-color: #f4f4f4;
-            padding: 15px 0;
+            padding: 20px;
             text-align: center;
         }
 
         header h1 {
             margin: 0;
-            font-size: 24px;
+            font-size: 36px;
         }
 
         nav {
@@ -45,9 +46,9 @@
             font-weight: bold;
         }
 
-        section {
-            padding: 20px;
+        .section-title {
             text-align: center;
+            padding: 20px 0;
         }
 
         .container {
@@ -63,17 +64,21 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
         }
 
         .card img {
             width: 100%;
+            border-radius: 5px;
         }
 
         .card .content {
             padding: 15px;
         }
 
-        .card h2 {
+        .card h2, .card h3 {
             margin: 0 0 10px 0;
         }
 
@@ -82,14 +87,14 @@
             line-height: 1.5;
         }
 
-        .card .price {
+        .price {
             background-color: #f0f0f0;
             padding: 10px;
             margin-bottom: 10px;
             text-align: center;
         }
 
-        .card .button {
+        .button {
             background-color: #007bff;
             color: #fff;
             padding: 10px 20px;
@@ -98,7 +103,7 @@
             cursor: pointer;
         }
 
-        .card .button:hover {
+        .button:hover {
             background-color: #0056b3;
         }
 
@@ -126,18 +131,47 @@
         .social-icons i {
             font-size: 20px;
         }
+
         @media (max-width: 768px) {
             .card {
                 width: 100%;
             }
         }
+
+        .column {
+            flex: 50%;
+            padding: 10px;
+        }
+
+        .column img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .testimonial {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .testimonial img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .header-message {
+            padding: 20px;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Endless Ride</h1>
-        <p>2,500 tours in over 100 destinations
-            and 36 years of experience!</p>
+        <p>2,500 tours in over 100 destinations and 36 years of experience!</p>
     </header>
 
     <nav>
@@ -151,58 +185,90 @@
         </ul>
     </nav>
 
+    <section class="header-message">
+        <h1>WE ARE WORLD WIDE</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </section>
+
     <section>
-        <h2>2,500 Tours in Over 100 Destinations</h2>
-        <h2>and 36 Years of Experience!</h2>
-        <img src="C:\Users\rites\Downloads\Layer 5.png" alt="Motorcycle" style="width: 100%; max-width: 800px;">
+        <h2 class="section-title">Featured Tours</h2>
+        <div class="container">
+            <div class="card">
+                <img src="C:\Users\rites\Downloads\Layer 8.png" alt="Motorcycle Expeditions">
+                <div class="content">
+                    <h2>Motorcycle Expeditions</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="price">$100 <span>per person</span></div>
+                    <button class="button">Book Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\rites\Downloads\Layer 7.png" alt="Mountains Motorcycle Tours">
+                <div class="content">
+                    <h2>Mountains Motorcycle Tours</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="price">$100 <span>per person</span></div>
+                    <button class="button">Book Now</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="C:\Users\rites\Downloads\Layer 6.png"alt="Motorcycle Adventure Tours">
+                <div class="content">
+                    <h2>Motorcycle Adventure Tours</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <div class="price">$100 <span>per person</span></div>
+                    <button class="button">Book Now</button>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section>
         <div class="container">
-            <div class="card">
-                <img src="" alt="Motorcycle Expeditions">
-                <div class="content">
-                    <h2>Motorcycle Expeditions</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="price">$100 <span>per person</span></div>
-                    <button class="button">Book Now</button>
+            <div class="column">
+                <div class="card">
+                    <h3>Alex Doe</h3>
+                    <div class="testimonial">
+                        <img src="C:\Users\rites\Downloads\IMG9.png" alt="Alex Doe">
+                        <p>Main Rider - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Steve Doe</h3>
+                    <div class="testimonial">
+                        <img src="C:\Users\rites\Downloads\IMG10.png" alt="Steve Doe">
+                        <p>Main Rider - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Bill Doe</h3>
+                    <div class="testimonial">
+                        <img src="" alt="Bill Doe">
+                        <p>Main Rider - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="card">
-                <img src="" alt="Mountains Motorcycle Tours">
-                <div class="content">
-                    <h2>Mountains Motorcycle Tours</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <div class="price">$100 <span>per person</span></div>
-                    <button class="button">Book Now</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <img src="" alt="Motorcycle Adventure Tours">
-                <div class="content">
-                    <h2>Motorcycle Adventure Tours</h2>
-                    <p>Lorem psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-                    <div class="price">$100 <span>per person</span></div>
-                    <button class="button">Book Now</button>
+            <div class="column">
+                <div class="card">
+                    <img src="" alt="Motorcyclist" style="width: 100%;">
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
+        <h1>Guided Motorcycle Tours Since 1880</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <p>&copy; 2023 Endless Ride. All Rights Reserved.</p>
         <div class="social-icons">
-            <a href="www.facebook.com.in"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-google-plus-g"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
         </div>
     </footer>
-    <script>
-
-
-    </script>
 </body>
+
 </html>
